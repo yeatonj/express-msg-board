@@ -7,6 +7,15 @@
     </head>
   </head>
   <body>
-    <%= message %>
+    <a href="./">Home</a>
+    <h1>New Message:</h1>
+    <form method="POST" action="/new">
+      <label for="author">Author:</label>
+      <input type="text" name="author" id="author">
+
+      <label for="msg">Message:</label>
+      <input type="text" name="msg" id="msg">
+      <button type="submit">Post</button>
+    </form>
   </body>
 </html>

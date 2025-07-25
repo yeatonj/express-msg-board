@@ -4,3 +4,8 @@
     margin-bottom: 20px;
     padding-left: 10px;
 }
+ form {
+    display: grid;
+    max-width: 300px;
+    gap: 10px;
+ }

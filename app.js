@@ -2,6 +2,9 @@
 const express = require("express");
 const app = express();
 
+// allows accessing form data elsewhere
+app.use(express.urlencoded({ extended: true }));
+
 const indexRouter = require("./routes/indexRouter");
 const newRouter = require("./routes/newRouter");
 const path = require("node:path");
