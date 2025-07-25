@@ -7,6 +7,15 @@
     </head>
   </head>
   <body>
-    <%= message %>
+    <h1>Messages:</h1>
+    
+      <% for (const message of messages) { %>
+        <div class="message-card">
+          <h4><em>User:</em> <%= message.user %></h4>
+          <p><em>Message:</em> <%= message.text %></p>
+          <p><em>Date Posted:</em> <%= message.added %></p>
+        </div>
+      <% } %>
+    
   </body>
 </html>
